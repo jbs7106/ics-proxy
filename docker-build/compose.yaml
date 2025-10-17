@@ -1,0 +1,8 @@
+# docker compose up -d
+services:
+  ics-proxy:
+    image: jbs7106/ics-proxy.php:latest
+    container_name: ics-proxy
+    ports:
+      - 80:80/tcp
+    restart: always
